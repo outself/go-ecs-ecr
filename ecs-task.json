@@ -1,11 +1,6 @@
 {
     "command": [],
     "cpu": 10,
-    "disableNetworking": null,
-    "dnsSearchDomains": null,
-    "dnsServers": null,
-    "dockerLabels": null,
-    "dockerSecurityOptions": null,
     "entryPoint": [],
     "environment": [
         {
@@ -14,8 +9,6 @@
         }
     ],
     "essential": true,
-    "extraHosts": null,
-    "hostname": null,
     "image": "%s.dkr.ecr.eu-west-1.amazonaws.com/earlytest:%s",
     "links": [],
     "logConfiguration": {
@@ -27,7 +20,6 @@
         }
     },
     "memory": 300,
-    "memoryReservation": null,
     "mountPoints": [],
     "name": "go-sample-webapp",
     "portMappings": [
@@ -37,10 +29,5 @@
             "protocol": "tcp"
         }
     ],
-    "privileged": null,
-    "readonlyRootFilesystem": null,
-    "ulimits": null,
-    "user": null,
     "volumesFrom": [],
-    "workingDirectory": null
 }
