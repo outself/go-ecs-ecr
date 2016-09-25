@@ -10,7 +10,6 @@ configure_aws_cli(){
 }
 
 deploy_cluster() {
-
     family="sample-webapp-task-family"
 
     make_task_def
@@ -65,7 +64,6 @@ push_ecr_image(){
 }
 
 register_definition() {
-
     if revision=$(aws ecs register-task-definition --container-definitions "$task_def" --family $family | $JQ '.taskDefinition.taskDefinitionArn'); then
         echo "Revision: $revision"
     else
